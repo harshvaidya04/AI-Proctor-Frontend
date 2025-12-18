@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Camera, Video, AlertCircle, CheckCircle, XCircle, Play, Square, RefreshCw, Users, Shield, Radio } from 'lucide-react';
 
-const API_BASE_URL = 'http://3.109.208.213:8000';
+const API_BASE_URL = 'http://13.126.69.167';
 
 // Types for better development experience
 interface Session {
