@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Camera, Video, AlertCircle, CheckCircle, XCircle, Play, Square, RefreshCw, Users, Shield, Radio } from 'lucide-react';
 
-const API_BASE_URL = 'http://13.127.237.30:8000';
+const API_BASE_URL = 'http://3.109.208.213:8000';
 
 // Types for better development experience
 interface Session {
@@ -148,7 +148,7 @@ const App = () => {
 
   // Handle frame capture and session polling
   useEffect(() => {
-    let frameInterval: NodeJS.Timeout;
+    let frameInterval: ReturnType<typeof setInterval>;
 
     if (activeView === 'monitoring' && currentSession?.session_id) {
       console.log('🔄 Monitoring active: Starting capture and polling loops');
